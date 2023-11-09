@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
@@ -5,11 +7,11 @@ function Navbar() {
                 flex justify-center py-4'>
             
                 <div className="container flex justify-between text-lg">
-                    Farmácia Mais Saúde
+                    <Link to='/home' className='hover:underline'>Farmácia Mais Saúde</Link>
 
                     <div className='flex gap-4'>
-                        Categoria
-                        Cadastrar Categoria
+                        <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                        <Link to='/cadastroCategoria' className='hover:underline'>Cadastrar Categoria</Link>
                     </div>
                 </div>
             </div>
